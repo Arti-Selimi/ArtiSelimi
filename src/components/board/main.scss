@@ -1,20 +1,3 @@
-.container {
-  width: 100%;
-  min-height: 400px;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  &__iframe {
-    width: 100%;
-    height: 100%;
-    zoom: 0.3;
-    transform-origin: center;
-    border: none;
-  }
-}
-
 .scrollable {
   overflow-y: scroll;
   scrollbar-gutter: stable both-edges; 

@@ -1,5 +1,6 @@
 import React from "react";
 import { FaReact, FaNodeJs, FaHtml5, FaJava } from "react-icons/fa6";
+import Image from "next/image";
 import {
   SiNextdotjs,
   SiTypescript,
@@ -9,7 +10,10 @@ import {
 } from "react-icons/si";
 import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
 import Tile from "../tiles/tile";
-import "./main.scss"
+import "./main.scss";
+import Pixel from "../../../public/projects/pixel.png";
+import Planit from "../../../public/projects/planit.png";
+import Wordle from "../../../public/projects/wordle.png";
 
 export default function BoardMain() {
   return (
@@ -33,26 +37,96 @@ export default function BoardMain() {
           className="h-full"
         />
       </div>
-      <div className="flex flex-col items-center gap-10 h-full flex-5 bg-secondary p-10 rounded-[15px] scrollable">
+      <div className="flex flex-col items-center gap-10 h-full flex-5 bg-secondary p-10 rounded-[15px] overflow-auto scrollable">
         <Tile
-            className="container"
+          className="flex-2"
           content={
-            <iframe className="container__iframe h-full w-full" src="https://plan-it-management.vercel.app/" />
+            <div className="flex flex-col justify-center items-start w-full h-full">
+              <div className="border-b-2 border-primary pb-1 px-2 w-full mb-2 flex justify-between items-center">
+                <div>
+                    <h1 className="text-2xl font-extrabold">title</h1>
+                </div>
+                <div>
+                    <p>repo</p>
+                    <i></i>
+                </div>
+              </div>
+              <Image
+                src={Planit}
+                alt="project"
+                objectFit="cover"
+                className="w-full h-full rounded-[15px]"
+              />
+              <div className="flex flex-col justify-center items-start w-full h-full">
+              <div className="pt-1 px-2 w-full flex">
+                <div>
+                    <h1 className="text-xl font-extrabold">NextJs, TypeScript</h1>
+                </div>
+              </div>
+            </div>
+            </div>
           }
         />
         <Tile
-            className="container"
+          className="flex-2"
           content={
-            <iframe className="container__iframe h-full w-full" src="https://pixel-perfect-three.vercel.app/" />
+            <div className="flex flex-col justify-center items-start w-full h-full">
+              <div className="border-b-2 border-primary pb-1 px-2 w-full mb-2 flex justify-between items-center">
+                <div>
+                    <h1 className="text-2xl font-extrabold">title</h1>
+                </div>
+                <div>
+                    <p>repo</p>
+                    <i></i>
+                </div>
+              </div>
+              <Image
+                src={Wordle}
+                alt="project"
+                objectFit="cover"
+                className="w-full h-full rounded-[15px]"
+              />
+              <div className="flex flex-col justify-center items-start w-full h-full">
+              <div className="pt-1 px-2 w-full flex">
+                <div>
+                    <h1 className="text-xl font-extrabold">NextJs, TypeScript</h1>
+                </div>
+              </div>
+            </div>
+            </div>
           }
         />
         <Tile
-            className="container"
+          className="flex-2"
           content={
-            <iframe className="container__iframe h-full w-full" src="https://wordle-indol-gamma.vercel.app/" />
+            <div className="flex flex-col justify-center items-start w-full h-full">
+              <div className="border-b-2 border-primary pb-1 px-2 w-full mb-2 flex justify-between items-center">
+                <div>
+                    <h1 className="text-2xl font-extrabold">title</h1>
+                </div>
+                <div>
+                    <p>repo</p>
+                    <i></i>
+                </div>
+              </div>
+              <Image
+                src={Pixel}
+                alt="project"
+                objectFit="cover"
+                className="w-full h-full rounded-[15px]"
+              />
+              <div className="flex flex-col justify-center items-start w-full h-full">
+              <div className="pt-1 px-2 w-full flex">
+                <div>
+                    <h1 className="text-xl font-extrabold">NextJs, TypeScript</h1>
+                </div>
+              </div>
+            </div>
+            </div>
           }
         />
       </div>
+
       <div
         className="flex flex-col items-center gap-10 h-full bg-secondary py-10 rounded-[15px] scrollable"
         style={{ flex: 1 }}
