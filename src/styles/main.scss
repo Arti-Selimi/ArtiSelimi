@@ -3,18 +3,16 @@
   scrollbar-gutter: stable both-edges; 
   position: relative;
   &::-webkit-scrollbar {
-    width: 8px;
+    width: 10px;
     position: absolute;
   }
 
   &::-webkit-scrollbar-track {
     background: transparent;
-    margin: 5px 0;
   }
 
   &::-webkit-scrollbar-thumb {
-    background: #F7F5EE;
-    border-radius: 15px;
+    background: #0F0904;
   }
 }
 
