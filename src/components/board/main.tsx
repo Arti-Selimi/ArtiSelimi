@@ -1,5 +1,12 @@
 import React from "react";
-import { FaReact, FaNodeJs, FaHtml5, FaJava } from "react-icons/fa6";
+import {
+  FaReact,
+  FaNodeJs,
+  FaHtml5,
+  FaJava,
+  FaArrowRight,
+  FaExpand,
+} from "react-icons/fa6";
 import Image from "next/image";
 import {
   SiNextdotjs,
@@ -10,10 +17,11 @@ import {
 } from "react-icons/si";
 import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
 import Tile from "../tiles/tile";
-import "./main.scss";
+import "@/styles/main.scss";
 import Pixel from "../../../public/projects/pixel.png";
 import Planit from "../../../public/projects/planit.png";
 import Wordle from "../../../public/projects/wordle.png";
+import Link from "next/link";
 
 export default function BoardMain() {
   return (
@@ -44,11 +52,16 @@ export default function BoardMain() {
             <div className="flex flex-col justify-center items-start w-full h-full">
               <div className="border-b-2 border-primary pb-1 px-2 w-full mb-2 flex justify-between items-center">
                 <div>
-                    <h1 className="text-2xl font-extrabold">title</h1>
+                  <h1 className="text-2xl font-extrabold">Plan-It</h1>
                 </div>
-                <div>
-                    <p>repo</p>
-                    <i></i>
+                <div className="flex gap-5 items-center">
+                  <Link
+                    href="https://github.com/Arti-Selimi/PlanIt"
+                    target="_blank"
+                  >
+                    <FiGithub size={25} />
+                  </Link>
+                  <FaExpand size={25} />
                 </div>
               </div>
               <Image
@@ -58,12 +71,15 @@ export default function BoardMain() {
                 className="w-full h-full rounded-[15px]"
               />
               <div className="flex flex-col justify-center items-start w-full h-full">
-              <div className="pt-1 px-2 w-full flex">
-                <div>
-                    <h1 className="text-xl font-extrabold">NextJs, TypeScript</h1>
+                <div className="pt-1 px-2 w-full flex justify-between items-center">
+                  <div>
+                    <h1 className="text-xl font-extrabold">
+                      NextJs, TypeScript
+                    </h1>
+                  </div>
+                  <FaArrowRight size={25} className="-rotate-45" />
                 </div>
               </div>
-            </div>
             </div>
           }
         />
@@ -73,11 +89,16 @@ export default function BoardMain() {
             <div className="flex flex-col justify-center items-start w-full h-full">
               <div className="border-b-2 border-primary pb-1 px-2 w-full mb-2 flex justify-between items-center">
                 <div>
-                    <h1 className="text-2xl font-extrabold">title</h1>
+                  <h1 className="text-2xl font-extrabold">Unlimited Wordle</h1>
                 </div>
-                <div>
-                    <p>repo</p>
-                    <i></i>
+                <div className="flex gap-5 items-center">
+                  <Link
+                    href="https://github.com/Arti-Selimi/wordle"
+                    target="_blank"
+                  >
+                    <FiGithub size={25} />
+                  </Link>
+                  <FaExpand size={25} />
                 </div>
               </div>
               <Image
@@ -87,12 +108,15 @@ export default function BoardMain() {
                 className="w-full h-full rounded-[15px]"
               />
               <div className="flex flex-col justify-center items-start w-full h-full">
-              <div className="pt-1 px-2 w-full flex">
-                <div>
-                    <h1 className="text-xl font-extrabold">NextJs, TypeScript</h1>
+                <div className="pt-1 px-2 w-full flex justify-between items-center">
+                  <div>
+                    <h1 className="text-xl font-extrabold">
+                      NextJs, TypeScript
+                    </h1>
+                  </div>
+                  <FaArrowRight size={25} className="-rotate-45" />
                 </div>
               </div>
-            </div>
             </div>
           }
         />
@@ -102,11 +126,16 @@ export default function BoardMain() {
             <div className="flex flex-col justify-center items-start w-full h-full">
               <div className="border-b-2 border-primary pb-1 px-2 w-full mb-2 flex justify-between items-center">
                 <div>
-                    <h1 className="text-2xl font-extrabold">title</h1>
+                  <h1 className="text-2xl font-extrabold">Pixel Perfect</h1>
                 </div>
-                <div>
-                    <p>repo</p>
-                    <i></i>
+                <div className="flex gap-5 items-center">
+                  <Link
+                    href="https://github.com/Arti-Selimi/Pixel-Perfect"
+                    target="_blank"
+                  >
+                    <FiGithub size={25} />
+                  </Link>
+                  <FaExpand size={25} />
                 </div>
               </div>
               <Image
@@ -116,17 +145,19 @@ export default function BoardMain() {
                 className="w-full h-full rounded-[15px]"
               />
               <div className="flex flex-col justify-center items-start w-full h-full">
-              <div className="pt-1 px-2 w-full flex">
-                <div>
-                    <h1 className="text-xl font-extrabold">NextJs, TypeScript</h1>
+                <div className="pt-1 px-2 w-full flex justify-between items-center">
+                  <div>
+                    <h1 className="text-xl font-extrabold">
+                      NextJs, TypeScript
+                    </h1>
+                  </div>
+                  <FaArrowRight size={25} className="-rotate-45" />
                 </div>
               </div>
-            </div>
             </div>
           }
         />
       </div>
-
       <div
         className="flex flex-col items-center gap-10 h-full bg-secondary py-10 rounded-[15px] scrollable"
         style={{ flex: 1 }}
