@@ -13,11 +13,12 @@ import "@/styles/main.scss";
 import Pixel from "../../../public/projects/pixel.png";
 import Planit from "../../../public/projects/planit.png";
 import Wordle from "../../../public/projects/wordle.png";
+import IconTile from "../tiles/iconTiles";
 
 export default function BoardMain() {
   return (
     <div className="h-[75vh] w-full flex gap-10 p-10 text-white">
-      <div className="flex flex-col items-center gap-10 h-full flex-5 bg-primary p-10 rounded-[15px]">
+      <div className="flex flex-col items-center gap-10 h-full flex-5 bg-violet p-10 rounded-[15px]">
         <div className="text-black">
           <div>
             <h1 className="text-4xl">title</h1>
@@ -31,50 +32,50 @@ export default function BoardMain() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center gap-10 h-full flex-5 bg-primary p-10 rounded-[15px] overflow-auto scrollable">
+      <div className="flex flex-col items-center gap-10 h-full flex-5 bg-violet p-10 rounded-[15px] overflow-auto scrollable">
         <Tile
-          className="flex-2"
           name="Plan-It"
           link="https://github.com/Arti-Selimi/PlanIt"
           imgSrc={Planit}
           frameworks="NextJs, TypeScript"
+          deploymentUrl="https://plan-it-management.vercel.app/"
         />
         <Tile
-          className="flex-2"
           name="Unlimited-Wordle"
           link="https://github.com/Arti-Selimi/Wordle"
           imgSrc={Wordle}
           frameworks="NextJs, TypeScript"
+          deploymentUrl="https://wordle-indol-gamma.vercel.app/"
         />
         <Tile
-          className="flex-2"
           name="Pixel-Perfect"
           link="https://github.com/Arti-Selimi/Pixel-Perfect"
           imgSrc={Pixel}
           frameworks="NextJs, TypeScript"
+          deploymentUrl="https://pixel-perfect-three.vercel.app/"
         />
       </div>
       <div
-        className="flex flex-col items-center gap-5 h-full bg-primary p-5 rounded-[15px] scrollable"
+        className="flex flex-col items-center gap-5 h-full bg-violet p-5 rounded-[15px] scrollable"
         style={{ flex: 1 }}
       >
-        <div className="bg-accent p-5 flex flex-col gap-10 rounded-[10px]">
-          <Tile contentType="icon" content={<FiGithub size={40} />} />
-          <Tile contentType="icon" content={<FiLinkedin size={40} />} />
-          <Tile contentType="icon" content={<FiTwitter size={40} />} />
+        <div className="bg-accent-red p-5 flex flex-col gap-10 rounded-[10px]">
+          <IconTile content={<FiGithub size={40} />} />
+          <IconTile content={<FiLinkedin size={40} />} />
+          <IconTile content={<FiTwitter size={40} />} />
         </div>
         <div className="bg-accent-orange p-5 flex flex-col gap-10 rounded-[10px]">
-          <Tile contentType="icon" content={<FaHtml5 size={40} />} />
-          <Tile contentType="icon" content={<FaReact size={40} />} />
-          <Tile contentType="icon" content={<SiNextdotjs size={40} />} />
-          <Tile contentType="icon" content={<SiTypescript size={40} />} />
-          <Tile contentType="icon" content={<SiSass size={40} />} />
+          <IconTile content={<FaHtml5 size={40} />} />
+          <IconTile content={<FaReact size={40} />} />
+          <IconTile content={<SiNextdotjs size={40} />} />
+          <IconTile content={<SiTypescript size={40} />} />
+          <IconTile content={<SiSass size={40} />} />
         </div>
-        <div className="bg-secondary p-5 flex flex-col gap-10 rounded-[10px]">
-          <Tile contentType="icon" content={<FaNodeJs size={40} />} />
-          <Tile contentType="icon" content={<SiGraphql size={40} />} />
-          <Tile contentType="icon" content={<SiMysql size={40} />} />
-          <Tile contentType="icon" content={<FaJava size={40} />} />
+        <div className="bg-brown p-5 flex flex-col gap-10 rounded-[10px]">
+          <IconTile content={<FaNodeJs size={40} />} />
+          <IconTile content={<SiGraphql size={40} />} />
+          <IconTile content={<SiMysql size={40} />} />
+          <IconTile content={<FaJava size={40} />} />
         </div>
       </div>
     </div>
