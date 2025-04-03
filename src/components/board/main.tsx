@@ -17,7 +17,7 @@ import IconTile from "../tiles/iconTiles";
 
 export default function BoardMain() {
   return (
-    <div className="h-[75vh] w-full flex gap-10 p-10 text-white">
+    <div className="h-[80vh] w-full flex gap-10 p-10 text-white">
       <div className="flex flex-col items-center gap-10 h-full flex-5 bg-violet p-10 rounded-[15px]">
         <div className="text-black">
           <div>
@@ -59,11 +59,6 @@ export default function BoardMain() {
         className="flex flex-col items-center gap-5 h-full bg-violet p-5 rounded-[15px] scrollable"
         style={{ flex: 1 }}
       >
-        <div className="bg-accent-red p-5 flex flex-col gap-10 rounded-[10px]">
-          <IconTile content={<FiGithub size={40} />} />
-          <IconTile content={<FiLinkedin size={40} />} />
-          <IconTile content={<FiTwitter size={40} />} />
-        </div>
         <div className="bg-accent-orange p-5 flex flex-col gap-10 rounded-[10px]">
           <IconTile content={<FaHtml5 size={40} />} />
           <IconTile content={<FaReact size={40} />} />
