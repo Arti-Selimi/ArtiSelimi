@@ -21,7 +21,7 @@ export default function Tile({ name, imgSrc, frameworks, link, deploymentUrl }: 
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="p-5 rounded-[15px] bg-black  shadow-xl flex flex-col justify-center items-start w-full h-full">
+    <div className="p-5 rounded-[15px] bg-expresso  shadow-xl flex flex-col justify-center items-start w-full h-full">
       <div className="border-b-2 border-primary pb-1 px-2 w-full mb-2 flex justify-between items-center">
         <div>
           <h1 className="text-2xl font-extrabold">{name}</h1>

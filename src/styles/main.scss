@@ -5,6 +5,7 @@
   &::-webkit-scrollbar {
     width: 10px;
     position: absolute;
+    z-index: -10;
   }
 
   &::-webkit-scrollbar-track {
@@ -15,5 +16,3 @@
     background: #0F0904;
   }
 }
-
-  
