@@ -4,14 +4,9 @@ import {
   DialogContent,
   DialogTitle,
 } from "@/components/ui/dialog";
+import type { Module } from "@/components/types/types";
 
-type Props = {
-  link: string;
-  open: boolean;
-  onClose: () => void;
-};
-
-export default function Module({ link, open, onClose }: Props) {
+export default function Module({ link, open, onClose }: Module) {
   return (
     <Dialog open={open} onOpenChange={(isOpen) => {
       if (!isOpen) onClose();

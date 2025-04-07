@@ -7,10 +7,9 @@ import Image from "next/image";
 import ProfilePic from "../../../public/Arti.jpg";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Accent from "../animated-components/Accent";
 
-type Props = {};
-
-export default function About({}: Props) {
+export default function About() {
   return (
     <div className="bg-expresso text-white p-8 rounded-[15px] shadow-md w-full h-full flex flex-col 2xl:flex-row 2xl:gap-3 items-center">
       <div className="flex gap-2 2xl:flex-col items-center justify-between text-center lg:text-left">
@@ -67,59 +66,19 @@ export default function About({}: Props) {
             frameworks like React and Next.js.
           </p>
           <p className="text-white/60 italic text-xs 2xl:text-lg mb-4">
-            P.S. the{" "}
-            <motion.span
-              className="text-accent-orange font-extrabold"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              orangy-colored
-            </motion.span>{" "}
+            P.S. the <Accent content="orangy-colored " />
             background means front-end and the{" "}
-            <motion.span
-              className="text-brown font-extrabold"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              grayish
-            </motion.span>{" "}
+            <Accent content="grayish " className="text-brown " />
             one means back-end.
           </p>
         </div>
 
         <div className="flex items-center gap-3">
           <FaReact className="text-accent-orange text-xl animate-spin-slow" />
-          <span className="text-white/90 text-sm 2xl:text-lg">
-            Lately using{" "}
-            <motion.span
-              className="text-accent-orange font-semibold"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              React,
-            </motion.span>{" "}
-            <motion.span
-              className="text-accent-orange font-semibold"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-            >
-              {" "}
-              Next.js and
-            </motion.span>{" "}
-            <motion.span
-              className="text-accent-orange font-semibold"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
-            >
-              TypeScript
-            </motion.span>
-            .
-          </span>
+          <motion.span className="text-white/90 text-sm 2xl:text-lg">
+            Lately using <Accent content="React" /> and{" "}
+            <Accent content="Next.js" /> to build <Accent content="web apps" />.
+          </motion.span>
         </div>
 
         <div className="mt-2 text-white/60 italic text-sm 2xl:text-lg">
