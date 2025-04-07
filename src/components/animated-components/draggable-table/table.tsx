@@ -8,7 +8,7 @@ import Planit from "../../../../public/projects/planit.png";
 import Wordle from "../../../../public/projects/wordle.png";
 
 export default function Table() {
-  const scrollRef = useRef<HTMLDivElement>(null);
+  const parentRef = useRef<HTMLDivElement | null>(null);
 
   const initialProjects = [
     {
@@ -38,7 +38,7 @@ export default function Table() {
 
   return (
     <div
-      ref={scrollRef}
+      ref={parentRef}
       className="flex flex-col items-center gap-5 h-full flex-1 bg-beige py-5 px-2.5 2xl:py-10 2xl:px-5 rounded-[15px] scrollable overflow-y-scroll"
     >
       <Reorder.Group
@@ -49,7 +49,7 @@ export default function Table() {
       >
         {projects.map((project) => (
           <Tile
-            parentRef={scrollRef}
+            parentRef={parentRef}
             key={project.name}
             value={project}
             name={project.name}

@@ -1,7 +1,7 @@
 import { StaticImageData } from "next/image";
 
 export type Tile = {
-  parentRef?: React.RefObject<HTMLDivElement> | null;
+  parentRef?: React.RefObject<HTMLDivElement | null> ;
   key: string;
   value: object;
   name: string;

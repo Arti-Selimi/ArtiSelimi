@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { FaArrowRight, FaExpand } from "react-icons/fa";
@@ -57,7 +57,7 @@ export default function Tile({
           container.scrollTop += 10;
         }
       }}
-      className="p-5 rounded-[15px] bg-expresso shadow-xl flex flex-col justify-center items-start w-full"
+      className="p-5 rounded-[15px] cursor-pointer bg-expresso shadow-xl flex flex-col justify-center items-start w-full"
     >
       <div className="border-b-2 border-primary pb-1 px-2 w-full mb-2 flex justify-between items-center">
         <h1 className="text-xl font-extrabold">{name}</h1>
