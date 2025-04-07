@@ -24,13 +24,13 @@ export default function Tile({ name, imgSrc, frameworks, link, deploymentUrl }: 
     <div className="p-5 rounded-[15px] bg-expresso  shadow-xl flex flex-col justify-center items-start w-full h-full">
       <div className="border-b-2 border-primary pb-1 px-2 w-full mb-2 flex justify-between items-center">
         <div>
-          <h1 className="text-2xl font-extrabold">{name}</h1>
+          <h1 className="text-xl font-extrabold">{name}</h1>
         </div>
         <div className="flex gap-5 items-center">
           <Link href={`${link}`} target="_blank">
-            <FiGithub size={25} />
+            <FiGithub className="cursor-pointer hover:scale-110" size={20} />
           </Link>
-          <FaExpand size={25} onClick={() => setIsOpen(true)} />
+          <FaExpand className="cursor-pointer hover:scale-110" size={20} onClick={() => setIsOpen(true)} />
         </div>
       </div>
       {imgSrc && (
@@ -45,12 +45,14 @@ export default function Tile({ name, imgSrc, frameworks, link, deploymentUrl }: 
       <div className="flex flex-col justify-center items-start w-full h-full">
         <div className="pt-1 px-2 w-full flex justify-between items-center">
           <div>
-            <h1 className="text-xl font-extrabold">{frameworks}</h1>
+            <h1 className="text-sm font-extrabold">{frameworks}</h1>
           </div>
-          <FaArrowRight size={25} className="-rotate-45" />
+          <Link href={`${deploymentUrl}`} target="_blank">
+          <FaArrowRight className="cursor-pointer hover:scale-110 -rotate-45" size={20} />
+          </Link>
         </div>
       </div>
-      {isOpen && <Module link={deploymentUrl} onClose={() => setIsOpen(false)} />}
+      {isOpen && <Module open={isOpen} link={deploymentUrl} onClose={() => setIsOpen(false)} />}
     </div>
   );
 }
