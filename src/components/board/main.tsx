@@ -7,7 +7,6 @@ import {
   SiGraphql,
   SiMysql,
 } from "react-icons/si";
-import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
 import Tile from "../tiles/tile";
 import "@/styles/main.scss";
 import Pixel from "../../../public/projects/pixel.png";
@@ -18,7 +17,7 @@ import About from "../about/about";
 
 export default function BoardMain() {
   return (
-    <div className="h-[80vh] w-full flex flex-col lg:flex-row gap-5 p-5 2xl:p-10 text-white">
+    <div className="h-[80vh] w-full flex flex-row gap-5 p-5 2xl:p-10 text-white">
       <div className="flex h-full flex-1 bg-beige p-5 2xl:p-10 rounded-[15px] overflow-hidden">
         <About />
       </div>
