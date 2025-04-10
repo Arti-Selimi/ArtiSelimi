@@ -39,7 +39,7 @@ export default function Table() {
   return (
     <div
       ref={parentRef}
-      className="flex flex-col items-center gap-5 h-full flex-1 bg-beige py-5 px-2.5 2xl:py-10 2xl:px-5 rounded-[15px] scrollable overflow-y-scroll"
+      className="flex flex-col items-center gap-5 h-[75vh] flex-1 bg-beige py-5 px-2.5 2xl:py-10 2xl:px-5 rounded-[15px] scrollable overflow-y-scroll"
     >
       <Reorder.Group
         axis="y"
@@ -48,9 +48,10 @@ export default function Table() {
         className="flex flex-col gap-5 w-full"
       >
         {projects.map((project) => (
+            console.log("project", project),
           <Tile
-            parentRef={parentRef}
             key={project.name}
+            parentRef={parentRef}
             value={project}
             name={project.name}
             imgSrc={project.imgSrc}

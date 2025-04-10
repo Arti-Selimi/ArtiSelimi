@@ -11,7 +11,6 @@ import type { Tile } from "@/components/types/types";
 
 export default function Tile({
   parentRef,
-  key,
   value,
   name,
   imgSrc,
@@ -34,7 +33,6 @@ export default function Tile({
 
   return (
     <Reorder.Item
-      key={key}
       value={value}
       layout
       drag="y"
@@ -42,6 +40,9 @@ export default function Tile({
       whileDrag={{ scale: 1.02 }}
       onDrag={(e, info) => {
         if (!parentRef?.current) return;
+
+        console.log("e", e);
+        console.log("info", info);
 
         const container = parentRef?.current;
         const { y } = info.point;
@@ -57,7 +58,7 @@ export default function Tile({
           container.scrollTop += 10;
         }
       }}
-      className="p-5 rounded-[15px] cursor-pointer bg-expresso shadow-xl flex flex-col justify-center items-start w-full"
+      className="px-5 py-2 rounded-[15px] cursor-pointer bg-expresso shadow-xl flex flex-col justify-center items-start w-full"
     >
       <div className="border-b-2 border-primary pb-1 px-2 w-full mb-2 flex justify-between items-center">
         <h1 className="text-xl font-extrabold">{name}</h1>
