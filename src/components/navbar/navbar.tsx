@@ -15,7 +15,7 @@ export default function Navbar() {
         <div className="relative group -top-5">
           <div className="h-3 w-3 bg-green-500 rounded-full"></div>
           <div className="hidden group-hover:flex absolute left-1/2 -translate-x-1/2 bg-expresso text-white text-xs px-2 py-1 rounded z-10 mt-2">
-            Yes I'm watching!!
+            Yes I am watching!!
           </div>
         </div>
       </div>

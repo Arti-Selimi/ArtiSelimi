@@ -62,7 +62,7 @@ export default function About() {
           </p>
           <p className="text-sm 2xl:text-xl leading-relaxed text-white/80">
             I like trying out new tools, improving old projects, and learning by
-            building things. Right now, I’m focused on working with JavaScript
+            building things. Right now, I&#39;m focused on working with JavaScript
             frameworks like React and Next.js.
           </p>
           <p className="text-white/60 italic text-xs 2xl:text-lg mb-4">
@@ -82,7 +82,7 @@ export default function About() {
         </div>
 
         <div className="mt-2 text-white/60 italic text-sm 2xl:text-lg">
-          “Code is like humor. When you have to explain it, it’s bad.” — Cory
+          “Code is like humor. When you have to explain it, it&#39;s bad.” — Cory
           House
         </div>
       </div>
