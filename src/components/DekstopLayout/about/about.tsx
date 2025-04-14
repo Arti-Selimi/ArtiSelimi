@@ -4,7 +4,7 @@ import React from "react";
 import { FiMail, FiGithub, FiLinkedin } from "react-icons/fi";
 import { FaReact } from "react-icons/fa";
 import Image from "next/image";
-import ProfilePic from "../../../public/Arti.jpg";
+import ProfilePic from "../../../../public/Arti.jpg";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Accent from "../animated-components/Accent";

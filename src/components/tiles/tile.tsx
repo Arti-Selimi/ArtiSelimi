@@ -6,7 +6,7 @@ import Image from "next/image";
 import { FaArrowRight, FaExpand } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { Reorder } from "framer-motion";
-import Module from "../module/module";
+import Module from "../DekstopLayout/module/module";
 import type { Tile } from "@/components/types/types";
 
 export default function Tile({

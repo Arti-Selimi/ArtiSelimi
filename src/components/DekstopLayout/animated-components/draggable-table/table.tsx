@@ -3,9 +3,9 @@
 import React, { useState, useRef } from "react";
 import { Reorder } from "framer-motion";
 import Tile from "@/components/tiles/tile";
-import Pixel from "../../../../public/projects/pixel.png";
-import Planit from "../../../../public/projects/planit.png";
-import Wordle from "../../../../public/projects/wordle.png";
+import Pixel from "../../../../../public/projects/pixel.png";
+import Planit from "../../../../../public/projects/planit.png";
+import Wordle from "../../../../../public/projects/wordle.png";
 
 export default function Table() {
   const parentRef = useRef<HTMLDivElement | null>(null);
