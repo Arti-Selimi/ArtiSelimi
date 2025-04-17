@@ -8,7 +8,7 @@ import {
   SiMysql,
 } from "react-icons/si";
 import "@/styles/main.scss";
-import IconTile from "../../tiles/iconTiles";
+import IconTile from "../tiles/iconTiles";
 import About from "../about/about";
 import Table from "../animated-components/draggable-table/table";
 

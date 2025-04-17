@@ -1,11 +1,11 @@
 import BoardMain from "@/components/DekstopLayout/board/main";
-import Navbar from "@/components/navbar/navbar";
-import MobileMain from "@/components/MobileLayout/MobileMain";
+import Navbar from "@/components/DekstopLayout/navbar/navbar";
+import MobileMain from "@/components/MobileLayout/main/MobileMain";
 
 export default function Home() {
   return (
     <div>
-      <div className="flex items-center justify-center pb-10">
+      <div className="hidden md:flex items-center justify-center pb-10">
         <Navbar />
       </div>
       <div className="hidden md:block">
