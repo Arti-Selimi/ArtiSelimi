@@ -2,7 +2,7 @@
 
 import React, { useState, useRef } from "react";
 import { Reorder } from "framer-motion";
-import Tile from "@/components/DekstopLayout/tiles/tile";
+import Tile from "@/components/tiles/tile";
 import { projectsArr } from "@/components/projectArr/Projects";
 
 export default function Table() {
