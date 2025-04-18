@@ -8,7 +8,7 @@ import { useKeenSlider } from "keen-slider/react";
 
 export default function CardLayout() {
     const [currentSlide, setCurrentSlide] = useState(0);
-    const [sliderRef, instanceRef] = useKeenSlider({
+    const [sliderRef] = useKeenSlider({
       slideChanged(slider) {
         setCurrentSlide(slider.track.details.rel);
       },

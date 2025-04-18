@@ -5,9 +5,7 @@ import Accent from "@/components/DekstopLayout/animated-components/Accent";
 import { FiMail, FiGithub, FiLinkedin } from "react-icons/fi";
 import Link from "next/link";
 
-type Props = {};
-
-export default function MobileAbout({}: Props) {
+export default function MobileAbout() {
   return (
     <div className="flex flex-col p-5 pt-10 bg-expresso rounded-xl">
       <div className="w-24 h-24 rounded-full absolute top-8 left-35 flex items-center justify-center overflow-hidden border-4 border-expresso">
