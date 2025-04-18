@@ -2,42 +2,16 @@
 
 import React, { useState, useRef } from "react";
 import { Reorder } from "framer-motion";
-import Tile from "@/components/tiles/tile";
-import Pixel from "../../../../../public/projects/pixel.png";
-import Planit from "../../../../../public/projects/planit.png";
-import Wordle from "../../../../../public/projects/wordle.png";
+import Tile from "@/components/DekstopLayout/tiles/tile";
+import { projectsArr } from "@/components/projectArr/Projects";
 
 export default function Table() {
   const parentRef = useRef<HTMLDivElement | null>(null);
 
-  const initialProjects = [
-    {
-      name: "Plan-It",
-      imgSrc: Planit,
-      frameworks: "NextJs, TypeScript",
-      link: "https://github.com/Arti-Selimi/PlanIt",
-      deploymentUrl: "https://plan-it-management.vercel.app/",
-    },
-    {
-      name: "Unlimited-Wordle",
-      imgSrc: Wordle,
-      frameworks: "NextJs, TypeScript",
-      link: "https://github.com/Arti-Selimi/Wordle",
-      deploymentUrl: "https://wordle-indol-gamma.vercel.app/",
-    },
-    {
-      name: "Pixel-Perfect",
-      imgSrc: Pixel,
-      frameworks: "NextJs, TypeScript",
-      link: "https://github.com/Arti-Selimi/Pixel-Perfect",
-      deploymentUrl: "https://pixel-perfect-three.vercel.app/",
-    },
-  ];
-
-  const [projects, setProjects] = useState(initialProjects);
+  const [projects, setProjects] = useState(projectsArr);
 
   return (
-    <div
+  <div
       ref={parentRef}
       className="flex flex-col items-center gap-5 h-[75vh] flex-1 bg-beige py-5 px-2.5 2xl:py-10 2xl:px-5 rounded-[15px] scrollable overflow-y-scroll"
     >

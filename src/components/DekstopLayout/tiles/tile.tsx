@@ -6,7 +6,7 @@ import Image from "next/image";
 import { FaArrowRight, FaExpand } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { Reorder } from "framer-motion";
-import Module from "../DekstopLayout/module/module";
+import Module from "../module/module";
 import type { Tile } from "@/components/types/types";
 
 export default function Tile({
@@ -19,14 +19,17 @@ export default function Tile({
   deploymentUrl,
 }: Tile) {
   const [isOpen, setIsOpen] = useState(false);
-  const [constraints, setConstraints] = useState<{ top: number; bottom: number }>({ top: 0, bottom: 0 });
+  const [constraints, setConstraints] = useState<{
+    top: number;
+    bottom: number;
+  }>({ top: 0, bottom: 0 });
 
   useEffect(() => {
     if (parentRef?.current) {
       const tileHeight = parentRef?.current.offsetHeight;
       setConstraints({
         top: -tileHeight,
-        bottom: tileHeight
+        bottom: tileHeight,
       });
     }
   }, [parentRef]);
@@ -83,7 +86,11 @@ export default function Tile({
       />
 
       <div className="flex justify-between items-center pt-1 px-2 w-full">
-        <h1 className="text-sm font-extrabold">{frameworks}</h1>
+        <div className="flex gap-2 text-accent-orange text-2xl">
+          {frameworks.map((Framework, index) => {
+            return <Framework key={index} />;
+          })}
+        </div>{" "}
         <Link href={deploymentUrl} target="_blank">
           <FaArrowRight
             className="cursor-pointer hover:scale-110 -rotate-45"
