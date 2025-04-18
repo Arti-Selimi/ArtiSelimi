@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import type { Card } from "@/components/types/types";
 import Link from "next/link";
-import { FiGithub } from "react-icons/fi";
 
 export default function Card({
   name,
