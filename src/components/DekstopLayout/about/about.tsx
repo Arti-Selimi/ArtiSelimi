@@ -30,28 +30,27 @@ export default function About() {
           <div className="flex gap-4 text-xl text-white">
             <Link
               href="mailto:your@email.com"
-              className="hover:text-accent-orange transition"
+              className="hover:text-accent-orange transition hover:scale-110"
             >
               <FiMail />
             </Link>
             <Link
               href="https://github.com/Arti-Selimi"
               target="_blank"
-              className="hover:text-accent-orange transition"
+              className="hover:text-accent-orange transition hover:scale-110"
             >
               <FiGithub />
             </Link>
             <Link
               href="https://linkedin.com/in/your-profile"
               target="_blank"
-              className="hover:text-accent-orange transition"
+              className="hover:text-accent-orange transition hover:scale-110"
             >
               <FiLinkedin />
             </Link>
           </div>
         </div>
       </div>
-
       <div className="flex-1 flex flex-col justify-evenly h-full">
         <div className="flex flex-col gap-2">
           <h1 className="text-2xl 2xl:text-3xl font-bold">About Me</h1>

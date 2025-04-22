@@ -67,10 +67,10 @@ export default function Tile({
         <h1 className="text-xl font-extrabold">{name}</h1>
         <div className="flex gap-5 items-center">
           <Link href={link} target="_blank">
-            <FiGithub className="cursor-pointer hover:scale-110" size={20} />
+            <FiGithub className="cursor-pointer hover:scale-110 hover:text-accent-orange" size={20} />
           </Link>
           <FaExpand
-            className="cursor-pointer hover:scale-110"
+            className="cursor-pointer hover:scale-110 hover:text-accent-orange"
             size={20}
             onClick={() => setIsOpen(true)}
           />
@@ -93,7 +93,7 @@ export default function Tile({
         </div>{" "}
         <Link href={deploymentUrl} target="_blank">
           <FaArrowRight
-            className="cursor-pointer hover:scale-110 -rotate-45"
+            className="cursor-pointer hover:scale-110 hover:text-accent-orange -rotate-45"
             size={20}
           />
         </Link>

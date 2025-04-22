@@ -24,13 +24,22 @@ export default function Navbar() {
           <h1 className="text-2xl font-extrabold">Contacts:</h1>
         </div>
         <div className="flex items-center gap-3 text-2xl">
-          <Link href="MAILTO:selimiarti@outlook.com" target="_blank">
+          <Link
+            className="hover:text-accent-orange transition hover:scale-110"
+            href="MAILTO:selimiarti@outlook.com"
+            target="_blank"
+          >
             <FiMail />
           </Link>
-          <Link href="https://www.github.com/Arti-Selimi" target="_blank">
+          <Link
+            className="hover:text-accent-orange transition hover:scale-110"
+            href="https://www.github.com/Arti-Selimi"
+            target="_blank"
+          >
             <FiGithub />
           </Link>
           <Link
+            className="hover:text-accent-orange transition hover:scale-110"
             href="https://www.linkedin.com/in/arti-selimi-9116ab312/"
             target="_blank"
           >
