@@ -1,5 +1,4 @@
 import React from "react";
-import IconTile from "@/components/tiles/iconTiles";
 import { FaReact, FaNodeJs, FaHtml5, FaJava } from "react-icons/fa6";
 import {
   SiNextdotjs,
